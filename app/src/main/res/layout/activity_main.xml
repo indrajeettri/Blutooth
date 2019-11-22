@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Enabel bluetooth"
+    android:onClick="enableBluetooth">
+</Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getPairedbutton"
+        android:onClick="getPairedDevices">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nearbyDevice"
+        android:onClick="finddevice">
+
+    </Button>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:text="make devices Discoverable"
+    android:onClick="discoverable">
+
+</Button>
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="132dp"></ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        android:layout_gravity="center"
+        android:onClick="dothis">
+    </Button>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="270dp"
+        android:layout_height="311dp"
+        android:layout_gravity="center"></ImageView>
+</LinearLayout>
